@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/63e79147b8.js" crossorigin="anonymous"></script>
+    <title>prateek singh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Portfolios</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>  
+            </nav>
+
+            <div class="header-text">
+                <p><span class="auto-type"></span></p>
+                <h1>hi, I'm <span>PRATEEK</span> </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div id="about">
+            <div class="container">
+                <div class= "aboutrow">
+                    <div class="about-col-1">
+                        <img src="images/1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="aboutp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellendus totam, modi sint consequatur, accusantium ad, tempore qui commodi quo odio! Sit possimus delectus numquam nihil autem incidunt enim pariatur!
+                    </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web/apps</li>
+                        <li><span>Web development</span><br>Designing web/apps</li>
+                        <li><span>sketch</span><br>pencil sketches</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-current</span><br>TEDxNITRAIPUR<br>E-CEll</li>
+                        <li><span>2016-2022</span><br>lorem-ipsum</li>
+                        <li><span>2008-2016</span><br>pencil sketches</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-current</span><br>Nit RAIPUR</li>
+                        <li><span>2016-2022</span><br>Delhi Public School, Bhilai</li>
+                        <li><span>2008-2016</span><br>KPS</li>
+                    </ul>
+                </div>
+
+            </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web-design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates omnis necessitatibus expedita quidem, minima deserunt suscipit sequi tempore laudantium eaque perspiciatis quas neque consectetur atque aliquam dicta eius cupiditate!</p>
+        <a href="#">learn more</a>    
+        </div>
+        <div>
+            <i class="fa-regular fa-brush"></i>
+            <h2>Pencil-Sketches</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates omnis necessitatibus expedita quidem, minima deserunt suscipit sequi tempore laudantium eaque perspiciatis quas neque consectetur atque aliquam dicta eius cupiditate!</p>
+        <a href="#">learn more</a>    
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links ");
+        var tabcontents= document.getElementsByClassName("tab-contents ");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["sketch artist", "programmer", "web-developer"],
+            typeSpeed: 100,
+            backSpeed: 130,
+            loop: true
+        })
+    </script>
+</body>
+</html>
