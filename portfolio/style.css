@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
+
 body{
-    background: #080808;
+    background: black;
     color: aliceblue;
 }
 
@@ -22,6 +23,16 @@ html{
     background-image: url(images/home.png);
     background-size: cover;
     background-position: center;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 9999;
+    height: 96px;
 }
 
 .container{
@@ -69,6 +80,17 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+.header-text{
+    padding-top: 10%;
+}
+
+.about_img{
+    animation: spotify 2s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
 
 p{
     margin-top: 10%;
@@ -127,6 +149,7 @@ height: 550px
     font-size: 60px;
     font-weight: 600;
     color: aquamarine;
+    background-color: black;
 }
 
 .contact-sub-title{
@@ -322,6 +345,7 @@ height: 550px
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    background-color: black;
 }
 
 .contactme i{
@@ -350,13 +374,15 @@ height: 550px
 
 .socialmedia{
     margin-top: 40px;
+    background-color: black;
 }
+
 .socialmedias i{
       margin-right: 20px;
       margin-top: 20px;
       color: #fff;
-font-size: 30px;
-      }
+      font-size: 30px;
+          }
 
 .socialmedias a{
     text-decoration: none;
@@ -393,6 +419,16 @@ font-size: 30px;
 
 .logo{
     display: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 9999;
+    height: 96px;
 }
 
 h1{
